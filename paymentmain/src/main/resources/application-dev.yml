@@ -20,3 +20,11 @@ spring:
     locations: classpath:db/h2
     validate-migration-naming: true
 
+external:
+  gatewaypayee:
+    name: gateway-payee-consumer
+    url: http://localhost:9001/payee-gateway/
+  historypayee:
+    name: gateway-payee-consumer
+    url: http://localhost:9002/payee-history/
+

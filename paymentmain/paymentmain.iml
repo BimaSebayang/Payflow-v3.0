@@ -230,14 +230,14 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: software.amazon.awssdk:netty-nio-client:2.25.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-codec-http:4.1.112.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-codec-http2:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-codec:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-transport:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-common:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-buffer:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-handler:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-transport-native-unix-common:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport-native-unix-common:4.1.112.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-transport-classes-epoll:4.1.112.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.netty:netty-resolver:4.1.112.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.112.Final" level="project" />
     <orderEntry type="library" name="Maven: software.amazon.awssdk:sts:2.25.10" level="project" />
     <orderEntry type="library" name="Maven: software.amazon.awssdk:aws-query-protocol:2.25.10" level="project" />
     <orderEntry type="library" name="Maven: com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.10" level="project" />
@@ -247,5 +247,23 @@
     <orderEntry type="library" name="Maven: org.apache.pdfbox:xmpbox:2.0.24" level="project" />
     <orderEntry type="library" name="Maven: com.openhtmltopdf:openhtmltopdf-core:1.0.10" level="project" />
     <orderEntry type="library" name="Maven: de.rototor.pdfbox:graphics2d:0.32" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:6.3.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.6.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-oxm:6.1.12" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-mongodb:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-sync:5.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:5.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:5.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.mongodb:bson-record-codec:5.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:4.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:6.1.12" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:3.1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:3.1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:2.0.8" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.21.0" level="project" />
   </component>
 </module>
