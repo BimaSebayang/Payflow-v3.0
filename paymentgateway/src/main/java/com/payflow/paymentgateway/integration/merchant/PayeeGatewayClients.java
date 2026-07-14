@@ -1,4 +1,4 @@
-package com.payflow.paymentgateway.integration;
+package com.payflow.paymentgateway.integration.merchant;
 
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;

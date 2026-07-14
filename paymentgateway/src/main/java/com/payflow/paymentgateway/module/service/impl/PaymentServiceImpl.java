@@ -1,13 +1,11 @@
 package com.payflow.paymentgateway.module.service.impl;
 
-import com.payflow.paymentgateway.integration.PayeeGatewayClients;
+import com.payflow.paymentgateway.integration.merchant.PayeeGatewayClients;
 import com.payflow.paymentgateway.module.service.PaymentService;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

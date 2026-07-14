@@ -16,32 +16,12 @@ public class PaymentServiceImpl implements PaymentService {
     private PayeeGatewayClients payeeGatewayClients;
 
     @Override
-    public PaymentResponse createPayment(PaymentRequest request) {
-        return payeeGatewayClients.send(request);
-    }
-
-    @Override
     public PaymentResponse getPayment(String referenceNo) {
         return null;
     }
 
     @Override
     public List<PaymentResponse> getPaymentHistory(Long userId, String status) {
-        return null;
-    }
-
-    @Override
-    public PaymentResponse confirmPayment(String referenceNo) {
-        return null;
-    }
-
-    @Override
-    public PaymentResponse cancelPayment(String referenceNo) {
-        return null;
-    }
-
-    @Override
-    public PaymentResponse refundPayment(String referenceNo) {
         return null;
     }
 }
