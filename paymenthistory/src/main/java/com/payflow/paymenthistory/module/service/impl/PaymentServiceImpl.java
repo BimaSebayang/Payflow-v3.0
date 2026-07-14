@@ -2,6 +2,7 @@ package com.payflow.paymenthistory.module.service.impl;
 
 import com.payflow.paymenthistory.integration.PayeeGatewayClients;
 import com.payflow.paymenthistory.module.service.PaymentService;
+import com.payflow.paymenthistory.shared.dto.PaymentGatewayResponse;
 import com.payflow.paymenthistory.shared.dto.PaymentRequest;
 import com.payflow.paymenthistory.shared.dto.PaymentResponse;
 import lombok.RequiredArgsConstructor;
@@ -23,5 +24,10 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public List<PaymentResponse> getPaymentHistory(Long userId, String status) {
         return null;
+    }
+
+    @Override
+    public void savePaymentHistoryMongo(PaymentGatewayResponse response) {
+
     }
 }

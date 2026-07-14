@@ -1,10 +1,10 @@
 package com.payflow.paymentgateway.module.service.impl;
 
-import com.fasterxml.jackson.databind.util.BeanUtil;
 import com.payflow.paymentgateway.database.entity.Payment;
 import com.payflow.paymentgateway.database.repository.PaymentRepository;
 import com.payflow.paymentgateway.integration.PayeeGatewayClients;
 import com.payflow.paymentgateway.module.service.PaymentService;
+import com.payflow.paymentgateway.shared.dto.PaymentGatewayResponse;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
 import com.payflow.paymentgateway.shared.enums.PaymentStatus;
@@ -63,11 +63,18 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public PaymentResponse cancelPayment(String referenceNo) {
-        return null;
+        return payeeGatewayClients.cancelPayment(referenceNo);
     }
 
     @Override
     public PaymentResponse refundPayment(String referenceNo) {
-        return null;
+        return payeeGatewayClients.refundPayment(referenceNo);
+    }
+
+    @Override
+    public void savePaymentHistoryDb(PaymentGatewayResponse response) {
+        Payment payment = new Payment();
+        BeanUtils.copyProperties(response,payment);
+        paymentRepository.save(payment);
     }
 }

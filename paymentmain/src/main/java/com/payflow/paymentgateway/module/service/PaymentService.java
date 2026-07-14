@@ -2,6 +2,7 @@ package com.payflow.paymentgateway.module.service;
 
 
 import com.payflow.paymentgateway.database.entity.Payment;
+import com.payflow.paymentgateway.shared.dto.PaymentGatewayResponse;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
 
@@ -20,4 +21,6 @@ public interface PaymentService {
     PaymentResponse cancelPayment(String referenceNo);
 
     PaymentResponse refundPayment(String referenceNo);
+
+    void savePaymentHistoryDb(PaymentGatewayResponse response);
 }

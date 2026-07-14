@@ -1,5 +1,6 @@
 package com.payflow.paymenthistory.module.service;
 
+import com.payflow.paymenthistory.shared.dto.PaymentGatewayResponse;
 import com.payflow.paymenthistory.shared.dto.PaymentRequest;
 import com.payflow.paymenthistory.shared.dto.PaymentResponse;
 
@@ -12,4 +13,5 @@ public interface PaymentService {
 
     List<PaymentResponse> getPaymentHistory(Long userId, String status);
 
+    void savePaymentHistoryMongo(PaymentGatewayResponse response);
 }
