@@ -1,10 +1,72 @@
-# PayFlow v3.0
+# PayFlow
 
-Starter structure for a runnable User Service.
+PayFlow is a simple event-driven payment gateway built using Java 17 and Spring Boot Microservices.
 
-Planned next:
-- Full CRUD
-- JWT
-- BCrypt
+## Architecture
+
+```
+                Client
+                   │
+                   ▼
+          Payment Gateway Service
+                   │
+         ┌─────────┴─────────┐
+         ▼                   ▼
+ Payment Main         Payment History
+         │
+         ▼
+      Kafka Topic
+         │
+         ▼
+ Payment Scheduler
+```
+
+## Modules
+
+| Module | Description |
+|---------|-------------|
+| paymentgateway | API Gateway / Entry Point |
+| paymentmain | Main payment processing |
+| paymenthistory | Store payment history |
+| paymentscheduler | Scheduled jobs |
+
+## Technology
+
+- Java 17
+- Spring Boot 3.3.x
+- PostgreSQL
+- Kafka
+- Redis
+- Docker
+- Maven
+- Spring Data JPA
+- Spring Validation
 - Swagger
-- PostgreSQL integration
+
+## Features
+
+- Payment Processing
+- Payment History
+- Event Driven Architecture
+- Kafka Messaging
+- Redis Cache / Data Grid
+- Scheduler
+- REST API
+
+## Running
+
+```bash
+docker compose up
+```
+
+or
+
+```bash
+mvn clean install
+
+mvn spring-boot:run
+```
+
+---
+
+Developed for learning purposes.
