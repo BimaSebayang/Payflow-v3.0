@@ -45,7 +45,7 @@ PayFlow is a simple event-driven payment gateway built using Java 17 and Spring 
 - Payment Processing
 - Payment History
 - Event Driven Architecture
-- Kafka Messaging
+- Rabbit Messaging
 - Redis Cache / Data Grid
 - Scheduler
 - REST API
