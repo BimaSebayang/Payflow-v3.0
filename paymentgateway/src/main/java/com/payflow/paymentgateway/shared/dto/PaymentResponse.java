@@ -1,10 +1,10 @@
 package com.payflow.paymentgateway.shared.dto;
 
 
-import com.payflow.paymenthistory.shared.enums.Currency;
-import com.payflow.paymenthistory.shared.enums.MerchantType;
-import com.payflow.paymenthistory.shared.enums.PaymentMethod;
-import com.payflow.paymenthistory.shared.enums.PaymentStatus;
+import com.payflow.paymentgateway.shared.enums.Currency;
+import com.payflow.paymentgateway.shared.enums.MerchantType;
+import com.payflow.paymentgateway.shared.enums.PaymentMethod;
+import com.payflow.paymentgateway.shared.enums.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

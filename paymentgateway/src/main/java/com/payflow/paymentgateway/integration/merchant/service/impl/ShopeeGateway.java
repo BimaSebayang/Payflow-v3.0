@@ -23,4 +23,12 @@ public class ShopeeGateway implements MerchantGateway {
                 .build();
 
     }
+
+    @Override
+    public PaymentGatewayResponse refund(PaymentRequest request) {
+        return PaymentGatewayResponse.builder()
+                .status(PaymentStatus.SUCCESS)
+                .message("Success")
+                .build();
+    }
 }

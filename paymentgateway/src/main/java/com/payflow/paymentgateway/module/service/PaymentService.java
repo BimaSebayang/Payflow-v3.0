@@ -1,6 +1,7 @@
 package com.payflow.paymentgateway.module.service;
 
 
+import com.payflow.paymentgateway.shared.dto.PaymentGatewayResponse;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
 

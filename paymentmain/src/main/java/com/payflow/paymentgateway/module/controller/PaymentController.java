@@ -1,5 +1,6 @@
 package com.payflow.paymentgateway.module.controller;
 
+import com.payflow.paymentgateway.database.entity.Payment;
 import com.payflow.paymentgateway.module.service.PaymentService;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
@@ -19,7 +20,7 @@ public class PaymentController {
     private final PaymentService paymentService;
 
     @PostMapping
-    public ResponseEntity<PaymentResponse> createPayment(
+    public ResponseEntity<Payment> createPayment(
             @Valid @RequestBody PaymentRequest request) {
 
         return ResponseEntity.status(HttpStatus.CREATED)

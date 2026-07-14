@@ -29,9 +29,9 @@ public class PaymentServiceImpl implements PaymentService {
     private final RedisTemplate<String, Object> redisTemplate;
 
     @Override
-    public PaymentResponse createPayment(PaymentRequest request) {
+    public Payment createPayment(PaymentRequest request) {
         request.setReferenceNo(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmSS"))+request.getUserId()+ UUID.randomUUID());
-        PaymentStatus paymentStatus = PaymentStatus.PROCESS;
+        PaymentStatus paymentStatus = PaymentStatus.PENDING;
         Payment payment = new Payment();
         BeanUtils.copyProperties(request,payment);
         payment.setStatus(paymentStatus);
@@ -43,7 +43,7 @@ public class PaymentServiceImpl implements PaymentService {
                 paymentStatus
         );
 
-        return payeeGatewayClients.createPayments(request);
+        return payment;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public PaymentResponse confirmPayment(String referenceNo) {
-        return null;
+        return payeeGatewayClients.confirmPayment(referenceNo);
     }
 
     @Override

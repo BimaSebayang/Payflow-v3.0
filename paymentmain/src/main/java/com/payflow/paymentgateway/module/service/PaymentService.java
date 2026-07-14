@@ -1,6 +1,7 @@
 package com.payflow.paymentgateway.module.service;
 
 
+import com.payflow.paymentgateway.database.entity.Payment;
 import com.payflow.paymentgateway.shared.dto.PaymentRequest;
 import com.payflow.paymentgateway.shared.dto.PaymentResponse;
 
@@ -8,7 +9,7 @@ import java.util.List;
 
 public interface PaymentService {
 
-    PaymentResponse createPayment(PaymentRequest request);
+    Payment createPayment(PaymentRequest request);
 
     PaymentResponse getPayment(String referenceNo);
 

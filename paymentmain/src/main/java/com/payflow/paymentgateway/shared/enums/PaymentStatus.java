@@ -1,8 +1,8 @@
 package com.payflow.paymentgateway.shared.enums;
 
 public enum PaymentStatus {
-    PROCESS,
     PENDING,
+    ON_PROCESS,
     SUCCESS,
     FAILED,
     CANCELLED,

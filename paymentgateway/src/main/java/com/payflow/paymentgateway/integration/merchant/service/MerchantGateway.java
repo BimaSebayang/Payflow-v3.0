@@ -10,4 +10,6 @@ public interface MerchantGateway {
 
     PaymentGatewayResponse process(PaymentRequest request);
 
+    PaymentGatewayResponse refund(PaymentRequest request);
+
 }
